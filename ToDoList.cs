@@ -14,8 +14,6 @@ using System.Reflection.Metadata.Ecma335;
 var entry_list = new List<string>(); var exit = false;
 bool firstIteration = true;
 int identifier_increment = 0;
-//public int identifier_increment;
-//
 
 #pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
 
@@ -260,9 +258,6 @@ public class Menu
         }
         Console.WriteLine($"New Status Entry Identifier for entry: {input_status}");
 
-        // NEED TO CONFIGURE
-
-        // Iterate through the entry list and change the entry
         var modify_lines = entry_list[intModify].Split('\n');
         Console.WriteLine(modify_lines[4]);
         if (modify_lines[4].Trim().Contains("Status:"))
